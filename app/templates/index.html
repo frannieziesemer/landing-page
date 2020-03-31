@@ -1,11 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>C'est Cheese</title>
-  </head>
-  <body>
-    <h1>{{heading}}</h1>
-  </body>
-</html>
+{% extends "layout.html" %} {% block title %}{% endblock %} {% block content %} {% include 'partials/navbar.html' %}
+<div class="container homePage">
+    <img src="{{ url_for('static', filename='images/cestcheese-black-background.png')}}" alt="c'est cheese logo" class="img-logo" />
+</div>
+<h2>c'est [ pronounced <span> say </span> ] - French for `it is`</h2>
+{% endblock %}
