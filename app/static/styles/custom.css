@@ -1,12 +1,29 @@
+.topNavbar {
+    background: none;
+}
+.topNavbar a {
+    color: #626868;
+}
+
+.topNavbar a:hover {
+    color: #939196;
+}
+
 body {
+    background-color: #fffefe;
+
+}
+.homePage {
     background-color: #343A40;
+    min-height: 100vh;
+    
 }
 
 .img-logo {
     display: block;
     margin: 0 auto;
-    width: 40%;
-    padding: 100px 0px 0px 0px;
+    width: 20%;
+    padding:  110px 0px 0px 0px;
 }
 
 h1 {
@@ -17,9 +34,9 @@ h1 {
 }
 
 h2 {
-    color: #FFFFF9;
+    color: #f2f2f2;
     text-align: center;
-    padding: 30px;
+    padding: 50px;
     font-family: 'Cedarville Cursive', cursive;
 }
 
@@ -28,17 +45,21 @@ h2 {
 }
 
 .pages-container {
-    background-color: #FFFFF9;
+    background-color: #fffefe;
     box-sizing: content-box;
     width: 80%;
     padding: 10px;
-    margin-top: 50px;
+    margin: 50px 100px;
 }
 
 .photoAboutSection {
     width: 300px;
+    padding: 15px;
 }
 
+.logo-about-page {
+    width: 150px;
+}
 .textFindUs {
     padding-bottom: 100px;
 }

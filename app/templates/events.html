@@ -1,4 +1,10 @@
-{% extends "layout.html" %} {% block title %}{% endblock %} {% block content %}
+{% extends "layout.html" %}
+{% block title %}{% endblock %}
 
+
+{% block content %}
+{% include 'partials/topNavbar.html' %}
 <div class="container-fluid pages-container"></div>
-{% include 'partials/navbar.html' %} {% endblock %}
+{% include 'partials/bottomNavbar.html' %}
+
+{% endblock %}

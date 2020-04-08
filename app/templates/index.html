@@ -1,6 +1,16 @@
-{% extends "layout.html" %} {% block title %}{% endblock %} {% block content %} {% include 'partials/navbar.html' %}
-<div class="container homePage">
-    <img src="{{ url_for('static', filename='images/cestcheese-black-background.png')}}" alt="c'est cheese logo" class="img-logo" />
+{% extends "layout.html" %}
+{% block title %}
+{% endblock %}
+
+{% block content %}
+
+{% include 'partials/bottomNavbar.html' %}
+
+<div class="homePage">
+  {% include 'partials/topNavbar.html' %}
+  <img src="{{ url_for('static', filename='images/cestcheese-black-background.png')}}" alt="c'est cheese logo"
+    class="img-logo" />
+
+  <h2>c'est [ pronounced say ] - French for `it is`</h2>
 </div>
-<h2>c'est [ pronounced <span> say </span> ] - French for `it is`</h2>
 {% endblock %}

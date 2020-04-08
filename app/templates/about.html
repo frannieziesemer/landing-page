@@ -1,38 +1,57 @@
-{% extends "layout.html" %} {% block title %}{% endblock %} {% block content %}
+{% extends "layout.html" %}
+
+{% block title %}
+{% endblock %}
+
+{% block content %}
+{% include 'partials/topNavbar.html' %}
 
 <div class="container-fluid pages-container">
     <div class="row">
         <div class="col-sm-12">
-            <h1 class="description">
-                We are a food trailer based in Western Queensland, specialising in gourmet cheese from Australia and around the world
-            </h1>
+
             <div class="row">
                 <!-- <div class="col-sm-4">
                     <img src="{{ url_for('static', filename='images/cheeseboard.png')}}" alt="cheese board" class="marginPhoto img-fluid mx-auto" />
                 </div> -->
+                <div class="col-sm-4">
+                    <img src="{{ url_for('static', filename='images/ted.png')}}"
+                        alt="serving customers from a good trailer" class="img-fluid photoAboutSection" />
+                    <img src="{{ url_for('static', filename='images/cheese.png')}}" alt="two types of cheese"
+                        class="img-fluid photoAboutSection" />
 
-                <div class="col-sm-6">
-                    <img src="{{ url_for('static', filename='images/cheese.png')}}" alt="two types of cheese" class="img-fluid photoAboutSection" />
-
-                    <img src="{{ url_for('static', filename='images/raclette.jpg')}}" alt="melted raclette cheese" class="img-fluid photoAboutSection" />
+                    <img src="{{ url_for('static', filename='images/raclette.jpg')}}" alt="melted raclette cheese"
+                        class="img-fluid photoAboutSection " />
                 </div>
-                <div class="col-sm-6">
+                <div class="col-sm-8">
+                    <h1 class="description">
+                        We are a food trailer based in Western Queensland, specialising in gourmet cheese from Australia
+                        and
+                        around the world
+                    </h1>
                     <p class="textAbout">
                         In our little van, you can find types of
-                        <span class="textHighlight">fresh</span> Australian and international <span class="textHighlight">cheese</span>, Next level grilled <span class="textHighlight">raclette </span>cheese, just how the Swiss do it! Local olives, quince
+                        <span class="textHighlight">fresh</span> Australian and international <span
+                            class="textHighlight">cheese</span>, Next level grilled <span class="textHighlight">raclette
+                        </span>cheese, just how the Swiss do it! Local olives, quince
                         paste, French crisps
                         <span class="textHighlight">and more </span> to pair perfectly with cheese
                     </p>
                     <p>
                         ...the perfect way to end the week!
                     </p>
-                    <h5 class="textFindUs">
-                        Find us at Thomas Jack Park, Dalby QLD from 3pm most Fridays
-                    </h5>
+                    <div class="row">
+                        <h5 class="textFindUs">
+                            Find us at Thomas Jack Park, Dalby QLD from 3pm most Fridays
+                        </h5>
+                    </div>
                 </div>
             </div>
         </div>
 
-        {% include 'partials/navbar.html' %} {% endblock %}
+        {% include 'partials/bottomNavbar.html' %}
+
     </div>
 </div>
+
+{% endblock %}

@@ -3,7 +3,19 @@ from app import app
 
 import requests, json
 
-navbar = [
+topNavbar = [
+    {
+        'itemText': 'Facebook',
+        'itemURL': 'https://www.facebook.com/cestcheeseonthego/'
+    },
+    {
+        'itemText': 'Instagram',
+        'itemURL': 'https://www.instagram.com/cestcheese.onthego/?hl=en' 
+    }
+
+]
+
+bottomNavbar = [
     {
         'itemText': 'HOME',
         'itemURL': '/'
@@ -19,25 +31,26 @@ navbar = [
     {
         'itemText': 'CONTACT',
         'itemURL': '/contact'
-    }
+    },
+
 ]
 
 @app.route('/')
 def index():
     heading = "C'est Cheese on the Go"
-    return render_template('index.html', heading=heading, navbar=navbar)
+    return render_template('index.html', heading=heading, bottomNavbar=bottomNavbar, topNavbar=topNavbar)
 
 @app.route('/about')
 def about():
     heading = "About"
-    return render_template('about.html', heading=heading, navbar=navbar)
+    return render_template('about.html', heading=heading, bottomNavbar=bottomNavbar, topNavbar=topNavbar)
 
 @app.route('/events')
 def events():
     heading = "Events"
-    return render_template('events.html', heading=heading, navbar=navbar)
+    return render_template('events.html', heading=heading, bottomNavbar=bottomNavbar, topNavbar=topNavbar)
 
 @app.route('/contact')
 def contact():
     heading = "Conact"
-    return render_template('contact.html', heading=heading, navbar=navbar)
+    return render_template('contact.html', heading=heading, bottomNavbar=bottomNavbar, topNavbar=topNavbar)

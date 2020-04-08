@@ -1,0 +1,7 @@
+<nav class="navbar topNavbar navbar-expand-md bg-transparent ">
+  <img src="{{ url_for('static', filename='images/logo-white-background.jpg')}}" alt="c'est cheese logo"
+    class="navbar-logo" height="100" />
+  {% for item in topNavbar %}
+  <a class="nav-item nav-link navbar-right" href="{{item.itemURL}}">{{item.itemText}}</a>
+  {% endfor %}
+</nav>
