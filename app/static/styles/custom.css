@@ -12,7 +12,7 @@ body {
     background-color: #fffefe;
 
 }
-.homePage {
+.home-page {
     background-color: #343A40;
     min-height: 100vh;
     text-align: center;
@@ -31,10 +31,8 @@ h1 {
     padding-bottom: 70px;
     
 }
-.homePage-link {
+.home-page-link {
     padding: 20px;
-
-
 }
 h2 {
     color: #DEDCE2;
@@ -43,7 +41,7 @@ h2 {
     font-family: 'Cedarville Cursive', cursive;
 }
 
-.navbar, .homePage-link {
+.navbar, .home-page-link {
     font-family: 'Oswald', sans-serif;
 }
 
@@ -56,14 +54,15 @@ h2 {
     
 }
 
-.photoAboutSection {
+.photos-about-section {
     width: 400px;
-    padding-bottom: 40px;
-    padding-top: 40px;
+    padding-top: 50px;
+    
     
 }
 .text-about {
     text-align: center;
+    padding-top: 40px;
     padding-bottom: 70px;
 }
 
@@ -71,7 +70,7 @@ h2 {
 .text-about p {
     font-size: 18px;
 }
-.textHighlight {
+.text-highlight {
     font-style: italic;
     font-weight: 600;
 }
