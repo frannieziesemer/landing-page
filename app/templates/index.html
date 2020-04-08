@@ -4,13 +4,17 @@
 
 {% block content %}
 
-{% include 'partials/bottomNavbar.html' %}
-
 <div class="homePage">
-  {% include 'partials/topNavbar.html' %}
   <img src="{{ url_for('static', filename='images/cestcheese-black-background.png')}}" alt="c'est cheese logo"
     class="img-logo" />
 
   <h2>c'est [ pronounced say ] - French for `it is`</h2>
+
+  {% for item in topNavbar %}
+  <a class="homePage-link" href="{{item.itemURL}}">{{item.itemText}}</a>
+  {% endfor %}
+
 </div>
+
+{% include 'partials/bottomNavbar.html' %}
 {% endblock %}
