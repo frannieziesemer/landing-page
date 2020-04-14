@@ -1,7 +1,13 @@
 from flask import Flask, render_template, url_for, request
 from app import app
+from google.oauth2 import service_account
+# from apiclient.discovery import build
+# from google_auth_oauthlib.flow import InstalledAppFlow
 
 import requests, json
+import googleapiclient.discovery 
+
+
 
 topNavbar = [
     {
@@ -48,9 +54,21 @@ def about():
 @app.route('/events')
 def events():
     heading = "Events"
-    return render_template('events.html', heading=heading, bottomNavbar=bottomNavbar, topNavbar=topNavbar)
+    SCOPES = ['https://www.googleapis.com/auth/calendar']
+    SERVICE_ACCOUNT_FILE = 'app\cestcheese-36586cb857a8.json'
+
+    credentials = service_account.Credentials.from_service_account_file(
+        SERVICE_ACCOUNT_FILE, scopes=SCOPES)
+
+    calendar = googleapiclient.discovery.build('calendar', 'v3', credentials=credentials)
+    events = calendar.calendarList().list().execute()
+
+    
+    #events = calendar.events().list(calendarId='primary').execute()
+    
+    return render_template('events.html', heading=heading, bottomNavbar=bottomNavbar, topNavbar=topNavbar, events=events)
 
 @app.route('/contact')
 def contact():
-    heading = "Conact"
+    heading = "Contact"
     return render_template('contact.html', heading=heading, bottomNavbar=bottomNavbar, topNavbar=topNavbar)

@@ -2,3 +2,7 @@
 /__pycache__
 /.vscode
 *.pyc
+*.json
+app/sample.py
+calendarService.py
+quickstart.py
