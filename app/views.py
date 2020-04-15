@@ -1,8 +1,8 @@
 from flask import Flask, render_template, url_for, request
 from app import app
 from google.oauth2 import service_account
-# from apiclient.discovery import build
-# from google_auth_oauthlib.flow import InstalledAppFlow
+#from apiclient.discovery import build
+#from google_auth_oauthlib.flow import InstalledAppFlow
 
 import requests, json
 import googleapiclient.discovery 
@@ -60,13 +60,12 @@ def events():
     credentials = service_account.Credentials.from_service_account_file(
         SERVICE_ACCOUNT_FILE, scopes=SCOPES)
 
-    calendar = googleapiclient.discovery.build('calendar', 'v3', credentials=credentials)
-    events = calendar.calendarList().list().execute()
+    import googleapiclient.discovery
 
+    calendar = googleapiclient.discovery.build('calendar', 'v3', credentials=credentials)
+    response = calendar.events().list(calendarId='03pglsplgu7kl5875em5r57cec@group.calendar.google.com', maxResults=10, timeMin='2020-01-01T10:00:00-07:00').execute()
     
-    #events = calendar.events().list(calendarId='primary').execute()
-    
-    return render_template('events.html', heading=heading, bottomNavbar=bottomNavbar, topNavbar=topNavbar, events=events)
+    return render_template('events.html', heading=heading, bottomNavbar=bottomNavbar, topNavbar=topNavbar, events=response)
 
 @app.route('/contact')
 def contact():

@@ -6,7 +6,8 @@
 {% include 'partials/topNavbar.html' %}
 <div class="container-fluid pages-container">
 
-  {{events}}
+  {{events['items'][0]['summary']}}
+  {{events['items'][0]['start']['dateTime']}}
 
 </div>
 {% include 'partials/bottomNavbar.html' %}
