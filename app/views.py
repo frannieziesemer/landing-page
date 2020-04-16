@@ -59,10 +59,11 @@ def events():
     credentials = service_account.Credentials.from_service_account_file(
         SERVICE_ACCOUNT_FILE, scopes=SCOPES)
 
-    startDate = datetime.datetime.now()
+    calendarId = '03pglsplgu7kl5875em5r57cec@group.calendar.google.com'
+    timeMin = datetime.datetime.now().isoformat() + 'Z'
 
     calendar = googleapiclient.discovery.build('calendar', 'v3', credentials=credentials)
-    response = calendar.events().list(calendarId='03pglsplgu7kl5875em5r57cec@group.calendar.google.com', maxResults=10, timeMin='startDate').execute()
+    response = calendar.events().list(calendarId=calendarId, maxResults=10, timeMin=timeMin, orderBy=startTime, singleEvents=true).execute()
     
 
 

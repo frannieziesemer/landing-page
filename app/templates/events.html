@@ -4,10 +4,21 @@
 
 {% block content %}
 {% include 'partials/topNavbar.html' %}
-<div class="container-fluid pages-container">
 
-  {{events['items'][0]['summary']}}
-  {{events['items'][0]['start']['dateTime']}}
+<div class="container-fluid pages-container">
+  {% for event in events['items'] %}
+  <div class="row">
+    <div class="col-6">
+      {{event['summary']}}
+    </div>
+    <div class="col-6">
+      {{event['start']['dateTime']}}
+    </div>
+  </div>
+
+
+
+  {% endfor %}
 
 </div>
 {% include 'partials/bottomNavbar.html' %}
