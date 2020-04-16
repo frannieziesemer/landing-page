@@ -3,10 +3,14 @@ a {
     color: #939196;
 }
 
- a:hover {
+a:hover {
     color: #DEDCE2;
     text-decoration: none;
 }
+/* 
+a:active {
+    background-color: purple;
+} */
 
 body {
     background-color: #fffefe;
@@ -21,14 +25,15 @@ body {
 .img-logo {
     display: block;
     margin: 0 auto;
-    width: 25%;
-    padding:  110px 0px 0px 0px;
+    height: auto;
+
+    padding:  50px 0px 0px 0px;
 }
 
-h1 {
+.text-about, h1  {
     font-size: 24px;
     font-weight: 350;
-    padding-bottom: 70px;
+    padding-bottom: 20px;
     
 }
 .home-page-link {
@@ -56,16 +61,19 @@ h2 {
 
 .photos-about-section {
     width: 400px;
-    padding-top: 50px;
+    padding-bottom: 30px;
     
-    
-}
-.text-about {
-    text-align: center;
-    padding-top: 40px;
-    padding-bottom: 70px;
 }
 
+.text-about {
+    text-align: center;
+    line-height: 150%;
+}
+
+.text-about h5 {
+    margin: 0 auto;
+    padding-bottom: 100px;
+}
 
 .text-about p {
     font-size: 18px;
