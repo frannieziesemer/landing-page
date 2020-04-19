@@ -40,6 +40,7 @@ bottomNavbar = [
 
 ]
 
+
 @app.route('/')
 def index():
     heading = "C'est Cheese on the Go"
@@ -63,7 +64,7 @@ def events():
     timeMin = datetime.datetime.now().isoformat() + 'Z'
 
     calendar = googleapiclient.discovery.build('calendar', 'v3', credentials=credentials)
-    response = calendar.events().list(calendarId=calendarId, maxResults=10, timeMin=timeMin, orderBy=startTime, singleEvents=true).execute()
+    response = calendar.events().list(calendarId=calendarId, maxResults=5, timeMin=timeMin, orderBy='startTime', singleEvents='true').execute()
     
 
 

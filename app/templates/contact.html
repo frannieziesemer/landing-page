@@ -1,9 +1,40 @@
 {% extends "layout.html" %}
-{% block title %}{% endblock %}
+{% block title %}
+{{ heading }}
+{% endblock %}
 
 {% block content %}
 {% include 'partials/topNavbar.html' %}
-<div class="container-fluid pages-container"></div>
+<div class="container-fluid pages-container contact-page">
+  <div class="row">
+    <div class="col-4-lg">
+      <div>
+        <img src="{{ url_for('static', filename='images/event-shot.png')}}" alt="event"
+          class="img-fluid img-contact float-right" />
+      </div>
+    </div>
+    <div class="col-8-lg">
+      <div class="contact-container">
+        <h4>Drop us a line</h4>
+
+        {% include 'partials/contactForm.html' %}
+
+        <div class="address">
+          <address>
+            C'est Cheese on the go <br>
+            Dalby, QLD 4405, AU <br>
+            0447 754 184 <br>
+            cestcheeseau@gmail.com
+          </address>
+          <small class="gitHub-link">This website was coded as a project by Frannie Ziesemer and <a
+              href="https://github.com/frannieziesemer/landing-page" target="_blank"> open sourced on GitHub
+          </small></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
 
 {% include 'partials/bottomNavbar.html' %}
 {% endblock %}

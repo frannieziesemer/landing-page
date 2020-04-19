@@ -1,25 +1,33 @@
 {% extends "layout.html" %}
-{% block title %}{% endblock %}
+{% block title %}{{ heading }}{% endblock %}
 
 
 {% block content %}
 {% include 'partials/topNavbar.html' %}
 
 <div class="container-fluid pages-container">
-  {% for event in events['items'] %}
-  <div class="row">
-    <div class="col-6">
-      {{event['summary']}}
-    </div>
-    <div class="col-6">
-      {{event['start']['dateTime']}}
-    </div>
+
+  <div class="text-events">
+    <h4> We also do events! Conact us <a href="/contact">here</a> to book C'est Cheese on the Go for your next party.
+    </h4>
   </div>
 
+  <div class="container-fluid events-list ">
+    {% for event in events['items'] %}
+    <div class="row events-row">
+      <div class="col-6-md event-summary">
+        {{ event['summary'] }}
+      </div>
+      <div class="col-6-md event-details">
+        {{ event['start']['dateTime'] }}
+        <br>
+        {{ event['location'] }}
+      </div>
+    </div>
+    <hr>
 
-
-  {% endfor %}
-
+    {% endfor %}
+  </div>
 </div>
 {% include 'partials/bottomNavbar.html' %}
 

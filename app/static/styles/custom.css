@@ -65,7 +65,7 @@ h2 {
     
 }
 
-.text-about {
+.text-about, .text-events {
     text-align: center;
     line-height: 150%;
 }
@@ -81,5 +81,36 @@ h2 {
 .text-highlight {
     font-style: italic;
     font-weight: 600;
+}
+
+.text-events {
+    font-size: 26px;
+
+}
+
+.events-list {
+    margin: 0 auto;
+    display: block;
+    width: fit-content;
+}
+
+.event-summary {
+    font-weight: 600;
+}
+
+.events-list, .address {
+    padding: 50px 0px 70px;
+}
+.events-row, .event-summary, .event-details {
+    padding: 10px;
+}
+
+.gitHub-link {
+    font-size: 14px;
+}
+
+.img-contact {
+     padding: 0px 30px 30px 0px;
+
 }
 
