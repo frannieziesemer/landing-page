@@ -6,5 +6,5 @@
 app/sample.py
 calendarService.py
 quickstart.py
-app/misc
+/app/misc
 datetimeTest.py

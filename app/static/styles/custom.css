@@ -4,7 +4,7 @@ a {
 }
 
 a:hover {
-    color: #DEDCE2;
+    color: #464655;
     text-decoration: none;
 }
 /* 
@@ -15,6 +15,10 @@ a:active {
 body {
     background-color: #fffefe;
 
+}
+
+.bottom-navbar {
+    background-color: #151720;
 }
 .home-page {
     background-color: #343A40;
