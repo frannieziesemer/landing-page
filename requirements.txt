@@ -1,4 +1,4 @@
-python==3.8
+python
 Flask
 Jinja2
 google-api-python-client==1.7.8
