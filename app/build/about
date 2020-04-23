@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Cedarville+Cursive|Montserrat|Oswald|Yellowtail&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+    <link rel="stylesheet" href="/static/styles/custom.css" />
+    <title>
+About
+</title>
+</head>
+
+<body>
+    
+<nav class="navbar topNavbar navbar-expand-md bg-transparent ">
+  <img src="/static/images/logo-white-background.jpg" alt="c'est cheese logo"
+    class="navbar-logo" height="100" />
+  
+  <a class="nav-item nav-link navbar-right" target="_blank" href="https://www.facebook.com/cestcheeseonthego/">Facebook</a>
+  
+  <a class="nav-item nav-link navbar-right" target="_blank" href="https://www.instagram.com/cestcheese.onthego/?hl=en">Instagram</a>
+  
+</nav>
+
+<div class="container-fluid pages-container">
+    <h1 class="text-about">
+        We are a food trailer based in Western Queensland, specialising in gourmet cheese from Australia
+        and around the world
+    </h1>
+    <div class="row content-block">
+        <div class="col-sm-4 ">
+            <img src="/static/images/cheese.png" alt="two types of cheese"
+                class="img-fluid photos-about-section" />
+
+        </div>
+        <div class="col-sm-4 ">
+            <img src="/static/images/raclette.jpg" alt="melted raclette cheese"
+                class="img-fluid photos-about-section " />
+
+        </div>
+        <div class="col-sm-4 ">
+            <img src="/static/images/ted.png" alt="serving customers from a good trailer"
+                class="img-fluid photos-about-section" />
+        </div>
+    </div>
+    <div class="row text-about">
+
+        <p>
+            In our little van, you can find many types of
+            <span class="text-highlight">fresh</span> Australian and international <span
+                class="text-highlight">cheese</span>,
+            Next level <span class="text-highlight">grilled raclette
+            </span>cheese, just how the Swiss do it! Local olives, quince
+            paste, French crisps
+            <span class="text-highlight">and more.. </span> a perfect way to end the
+            week!</p>
+    </div>
+    <div class="row text-about">
+        <h5 class="text-highlight">
+            Find us at Thomas Jack Park, Dalby QLD from 3pm most Fridays
+        </h5>
+    </div>
+    <nav class="navbar navbar-expand-md fixed-bottom navbar-dark bg-dark bottom-navbar">
+  
+  <a class="nav-item nav-link active mx-auto navbar" href="/">HOME</a>
+  
+  <a class="nav-item nav-link active mx-auto navbar" href="/about">ABOUT US</a>
+  
+  <a class="nav-item nav-link active mx-auto navbar" href="/events">EVENTS</a>
+  
+  <a class="nav-item nav-link active mx-auto navbar" href="/contact">CONTACT</a>
+  
+</nav>
+
+
+</div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+
+</html>

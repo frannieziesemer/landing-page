@@ -1,0 +1,120 @@
+
+a {
+    color: #939196;
+}
+
+a:hover {
+    color: #464655;
+    text-decoration: none;
+}
+/* 
+a:active {
+    background-color: purple;
+} */
+
+body {
+    background-color: #fffefe;
+
+}
+
+.bottom-navbar {
+    background-color: #151720;
+}
+.home-page {
+    background-color: #343A40;
+    min-height: 100vh;
+    text-align: center;
+}
+
+.img-logo {
+    display: block;
+    margin: 0 auto;
+    height: auto;
+
+    padding:  50px 0px 0px 0px;
+}
+
+.text-about, h1  {
+    font-size: 24px;
+    font-weight: 350;
+    padding-bottom: 20px;
+    
+}
+.home-page-link {
+    padding: 20px;
+}
+h2 {
+    color: #DEDCE2;
+    text-align: center;
+    padding: 50px;
+    font-family: 'Cedarville Cursive', cursive;
+}
+
+.navbar, .home-page-link {
+    font-family: 'Oswald', sans-serif;
+}
+
+.pages-container {
+    background-color: #fffefe;
+    box-sizing: content-box;
+    width: 80%;
+    padding: 10px;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+.photos-about-section {
+    width: 400px;
+    padding-bottom: 30px;
+    
+}
+
+.text-about, .text-events {
+    text-align: center;
+    line-height: 150%;
+}
+
+.text-about h5 {
+    margin: 0 auto;
+    padding-bottom: 100px;
+}
+
+.text-about p {
+    font-size: 18px;
+}
+.text-highlight {
+    font-style: italic;
+    font-weight: 600;
+}
+
+.text-events {
+    font-size: 26px;
+
+}
+
+.events-list {
+    margin: 0 auto;
+    display: block;
+    width: fit-content;
+}
+
+.event-summary {
+    font-weight: 600;
+}
+
+.events-list, .address {
+    padding: 50px 0px 70px;
+}
+.events-row, .event-summary, .event-details {
+    padding: 10px;
+}
+
+.gitHub-link {
+    font-size: 14px;
+}
+
+.img-contact {
+     padding: 0px 30px 30px 0px;
+
+}
+

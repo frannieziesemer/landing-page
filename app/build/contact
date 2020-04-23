@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Cedarville+Cursive|Montserrat|Oswald|Yellowtail&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+    <link rel="stylesheet" href="/static/styles/custom.css" />
+    <title>
+Contact
+</title>
+</head>
+
+<body>
+    
+<nav class="navbar topNavbar navbar-expand-md bg-transparent ">
+  <img src="/static/images/logo-white-background.jpg" alt="c'est cheese logo"
+    class="navbar-logo" height="100" />
+  
+  <a class="nav-item nav-link navbar-right" target="_blank" href="https://www.facebook.com/cestcheeseonthego/">Facebook</a>
+  
+  <a class="nav-item nav-link navbar-right" target="_blank" href="https://www.instagram.com/cestcheese.onthego/?hl=en">Instagram</a>
+  
+</nav>
+<div class="container-fluid pages-container contact-page">
+  <div class="row">
+    <div class="col-4-lg">
+      <div>
+        <img src="/static/images/event-shot.png" alt="event"
+          class="img-fluid img-contact float-right" />
+      </div>
+    </div>
+    <div class="col-8-lg">
+      <div class="contact-container">
+        <h4>Drop us a line</h4>
+
+        <form>
+  <div class="form-group">
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+      placeholder="Enter email">
+    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+  </div>
+  <div class="form-group">
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+  </div>
+  <div class="form-group">
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+      placeholder="Type your message here..."></textarea>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+        <div class="address">
+          <address>
+            C'est Cheese on the go <br>
+            Dalby, QLD 4405, AU <br>
+            0447 754 184 <br>
+            cestcheeseau@gmail.com
+          </address>
+          <small class="gitHub-link">This website was coded as a project by Frannie Ziesemer and <a
+              href="https://github.com/frannieziesemer/landing-page" target="_blank"> open sourced on GitHub
+          </small></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<nav class="navbar navbar-expand-md fixed-bottom navbar-dark bg-dark bottom-navbar">
+  
+  <a class="nav-item nav-link active mx-auto navbar" href="/">HOME</a>
+  
+  <a class="nav-item nav-link active mx-auto navbar" href="/about">ABOUT US</a>
+  
+  <a class="nav-item nav-link active mx-auto navbar" href="/events">EVENTS</a>
+  
+  <a class="nav-item nav-link active mx-auto navbar" href="/contact">CONTACT</a>
+  
+</nav>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+
+</html>

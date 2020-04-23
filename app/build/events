@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Cedarville+Cursive|Montserrat|Oswald|Yellowtail&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+    <link rel="stylesheet" href="/static/styles/custom.css" />
+    <title>Events</title>
+</head>
+
+<body>
+    
+<nav class="navbar topNavbar navbar-expand-md bg-transparent ">
+  <img src="/static/images/logo-white-background.jpg" alt="c'est cheese logo"
+    class="navbar-logo" height="100" />
+  
+  <a class="nav-item nav-link navbar-right" target="_blank" href="https://www.facebook.com/cestcheeseonthego/">Facebook</a>
+  
+  <a class="nav-item nav-link navbar-right" target="_blank" href="https://www.instagram.com/cestcheese.onthego/?hl=en">Instagram</a>
+  
+</nav>
+
+<div class="container-fluid pages-container">
+
+  <div class="text-events">
+    <h4> We also do events! Conact us <a href="/contact">here</a> to book C'est Cheese on the Go for your next party.
+    </h4>
+  </div>
+
+  <div class="container-fluid events-list ">
+    
+    <div class="row events-row">
+      <div class="col-6-md event-summary">
+        Cheese in the Park
+      </div>
+      <div class="col-6-md event-details">
+        2020-04-25T00:00:00+10:00
+        <br>
+        
+      </div>
+    </div>
+    <hr>
+
+    
+    <div class="row events-row">
+      <div class="col-6-md event-summary">
+        Cheese in the Park
+      </div>
+      <div class="col-6-md event-details">
+        2020-05-02T00:00:00+10:00
+        <br>
+        Thomas Jack Park, Dalby QLD 4405, Australia
+      </div>
+    </div>
+    <hr>
+
+    
+    <div class="row events-row">
+      <div class="col-6-md event-summary">
+        Big Skies Festival
+      </div>
+      <div class="col-6-md event-details">
+        2020-05-02T22:00:00+10:00
+        <br>
+        Dalby QLD 4405, Australia
+      </div>
+    </div>
+    <hr>
+
+    
+    <div class="row events-row">
+      <div class="col-6-md event-summary">
+        Cheese in the Park
+      </div>
+      <div class="col-6-md event-details">
+        2020-05-09T00:00:00+10:00
+        <br>
+        Thomas Jack Park, Dalby QLD 4405, Australia
+      </div>
+    </div>
+    <hr>
+
+    
+    <div class="row events-row">
+      <div class="col-6-md event-summary">
+        Cheese in the Park
+      </div>
+      <div class="col-6-md event-details">
+        2020-05-16T00:00:00+10:00
+        <br>
+        Thomas Jack Park, Dalby QLD 4405, Australia
+      </div>
+    </div>
+    <hr>
+
+    
+  </div>
+</div>
+<nav class="navbar navbar-expand-md fixed-bottom navbar-dark bg-dark bottom-navbar">
+  
+  <a class="nav-item nav-link active mx-auto navbar" href="/">HOME</a>
+  
+  <a class="nav-item nav-link active mx-auto navbar" href="/about">ABOUT US</a>
+  
+  <a class="nav-item nav-link active mx-auto navbar" href="/events">EVENTS</a>
+  
+  <a class="nav-item nav-link active mx-auto navbar" href="/contact">CONTACT</a>
+  
+</nav>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+
+</html>
