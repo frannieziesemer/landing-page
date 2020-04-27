@@ -40,6 +40,11 @@ bottomNavbar = [
 
 ]
 
+# @app.template_filter()
+# def datetimefilter(value, format='%a, %d %b'):
+#     return value.strptime(format)
+
+# app.jinja_env.filters['datetimefilter'] = datetimefilter
 
 @app.route('/')
 def index():
@@ -75,3 +80,4 @@ def events():
 def contact():
     heading = "Contact"
     return render_template('contact.html', heading=heading, bottomNavbar=bottomNavbar, topNavbar=topNavbar)
+
