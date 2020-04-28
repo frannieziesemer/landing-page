@@ -19,9 +19,12 @@
         {{ event['summary'] }}
       </div>
       <div class="col-6-md event-details">
-        {{ event['start']['dateTime'] }}
-        <br>
-        {{ event['location'] }}
+        <div class="event-date">
+          {{ event['start']['dateTime']|datetimefilter('%a %d %b') }}
+        </div>
+        <div class="event-location">
+          {{ event['location'] }}
+        </div>
       </div>
     </div>
     <hr>

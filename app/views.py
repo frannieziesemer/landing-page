@@ -1,10 +1,11 @@
 from flask import Flask, render_template, url_for, request
 from app import app
 from google.oauth2 import service_account
+from datetime import datetime
 
 import requests, json
 import googleapiclient.discovery 
-import datetime
+
 
 
 
@@ -40,9 +41,12 @@ bottomNavbar = [
 
 ]
 
-# @app.template_filter()
-# def datetimefilter(value, format='%a, %d %b'):
-#     return value.strptime(format)
+@app.template_filter('datetimefilter')
+def datetimefilter(value, format='%a %d %b'):
+    #convert api response string to datetime format 2020-04-18T00:00:00+10:00
+    eventTime = datetime.strptime(value, '%Y-%m-%dT%H:%M:%S+02:00')
+    #then back to string format
+    return eventTime.strftime(format)
 
 # app.jinja_env.filters['datetimefilter'] = datetimefilter
 
@@ -66,7 +70,7 @@ def events():
         SERVICE_ACCOUNT_FILE, scopes=SCOPES)
 
     calendarId = '03pglsplgu7kl5875em5r57cec@group.calendar.google.com'
-    timeMin = datetime.datetime.now().isoformat() + 'Z'
+    timeMin = datetime.now().isoformat() + 'Z'
 
     calendar = googleapiclient.discovery.build('calendar', 'v3', credentials=credentials)
     response = calendar.events().list(calendarId=calendarId, maxResults=5, timeMin=timeMin, orderBy='startTime', singleEvents='true').execute()
